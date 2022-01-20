@@ -1,0 +1,11 @@
+import numpy as np
+def makeArray(length):
+    out = np.random.randint(0, 100, length)
+    return out
+
+
+
+
+if __name__ == "__main__":
+    print("You suck")
+    print(makeArray(10))
