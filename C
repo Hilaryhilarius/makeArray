@@ -6,16 +6,17 @@
 int* makeArray(int length){
         int* pointer = (int*)malloc(sizeof(int)*length);
         int intArray[length];
-        pointer = &intArray;
+        pointer = intArray;
         int i;
 
         srand(time(NULL));
 
         for(i=0;i<length;i++){
-                intArray[i]=(rand());
+                pointer[i]=(rand());
         }
         return pointer;
 }
+
 
 int main(){
         int length = 15;
