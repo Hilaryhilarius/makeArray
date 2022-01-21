@@ -20,6 +20,6 @@ int* makeArray(int length){
 
 int main(){
         int length = 15;
-        
+        makeArray(length);
 
 }
